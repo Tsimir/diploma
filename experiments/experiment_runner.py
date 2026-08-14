@@ -19,9 +19,9 @@ from utility.generator import (
 
 
 from methods.agregate_graph import find_weights as graph_method
-from methods.Bulatov_naive import find_weights as bulatov_method
-from methods.Cohen_greedy import find_weights as cohen_method
-from methods.Kuznets_cone import find_weights as cone_method
+from methods.naive_svd import find_weights as bulatov_method
+from methods.greedy_obp import find_weights as cohen_method
+from methods.conical_mehods import find_weights as cone_method
 
 # ============================================================================
 # КОНФИГУРАЦИЯ ЭКСПЕРИМЕНТА (меняйте здесь нужные значения)

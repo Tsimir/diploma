@@ -3,13 +3,13 @@ import time
 
 from utility.generator import compute_my_kendall, compute_my_spearman, matrix_to_ranks, PrefMaGen_level, \
     PrefMaGen_noise, PrefMaGen_direct
-from methods.Bulatov_naive import find_weights as bulatov_method
-from methods.Cohen_greedy import find_weights as cohen_method
-from methods.Kuznets_cone import find_weights as cone_method
+from methods.naive_svd import find_weights as bulatov_method
+from methods.greedy_obp import find_weights as cohen_method
+from methods.conical_mehods import find_weights as cone_method
 from utility.saver import generate_matrices_csv
 
-m = 201  # количество объектов
-n = 200  # количество экспертов
+m = 21  # количество объектов
+n = 20  # количество экспертов
 
 method = 'noise'
 tau_wanted = 0.6
