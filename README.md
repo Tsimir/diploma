@@ -21,13 +21,15 @@ SRW/
 │   ├── naive_svd.py  
 │   ├── greedy_obp.py  
 │   └── conical_methods.py  
-├── experiments/                      # Скрипты для запуска экспериментов  
-│   ├── experiment_runner.py  
-│   └── analyze.py  
+├── archive/                      # Неиспользуемые вспомогательные скрипты  
+│   ├── agree.py  
+│   ├── forreview.py  
+│   ├── semkin_kefs.py   
+│   └── graph.py  
 └── utility/                          # Вспомогательные функции  
-    ├── comparator.py                 # Быстрое сравнение  
-    ├── generator.py                  # Генерация матриц и метрики качества  
-    └── saver.py                      # Сохранение матриц  
+│   ├── comparator.py                 # Быстрое сравнение  
+│   ├── generator.py                  # Генерация матриц и метрики качества  
+│   └── saver.py                      # Сохранение матриц  
 
 
 
@@ -43,16 +45,4 @@ cd SRW
 
 ```bash
 pip install -r requirements.txt
-```
-
-### 3. Запустить эксперимент
-
-```bash
-python experiments/experiment_runner.py --method naive --rank 10
-```
-### 3. Проанализировать результаты
-
-```bash
-python experiments/analyze.py
-python experiments/visualize_results.py
 ```
