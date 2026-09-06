@@ -244,8 +244,7 @@ $$\hat{Z} = \sum_{j=1}^{n} w_j Z_j,\quad w_j \ge 0,$$
 |---------|---------|------------|
 | $\tau$ Кендалла | $\displaystyle 1 - \frac{4}{m(m-1)}\sum_{i<j} I[Z_1(i,j) \neq Z_2(i,j)]$ | Согласованность по инверсиям |
 | $\rho$ Спирмена | $\displaystyle 1 - \frac{6}{m(m^2-1)}\sum_{i=1}^{m}(R_i - L_i)^2$ | Связь по разности рангов |
-| Accuracy | $\displaystyle \frac{1}{m(m-1)} \sum_{i \neq j} I[\operatorname{sign}(\hat{Z}_{ij}-\hat{Z}_{ji}) = \operatorname{sign}(Z_{ij}^{(0)}-Z_{ji}^{(0)})]$ | Доля верных попарных сравнений |
-
+| Accuracy | $\displaystyle \frac{1}{m(m-1)} \sum_{i \neq j} I[\text{sign}(\hat{Z}(ij)-\hat{Z}(ji)) = \text{sign}(Z(ij)-{Z}(ji))]$ | Доля пар, для которых предсказанный порядок совпадает с истинным |
 ---
 
 ## Режимы сравнения методов
@@ -296,10 +295,10 @@ $$\hat{Z} = \sum_{j=1}^{n} w_j Z_j,\quad w_j \ge 0,$$
 Ниже приведены ящики с усами для коэффициентов Кендалла и Спирмена в честном режиме (из презентации):
 
 ![Распределение Kendall $\tau$](pics/hon_my_kendall.png)  
-*Рис. 1 – Распределение Kendall $\tau$ по методам*
+*Рис. 1 – Распределение Kendall tau по методам*
 
 ![Распределение Spearman $\rho$](pics/hon_my_spearman.png)  
-*Рис. 2 – Распределение Spearman $\rho$ по методам*
+*Рис. 2 – Распределение Spearman rho по методам*
 
 ![Метрики графового метода](pics/graph_method.png)  
 *Рис. 3 – Средние показатели метрик графового метода для разных генераторов*
